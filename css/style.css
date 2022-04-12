@@ -87,6 +87,10 @@
   text-align: center;
 }
 
+#map {
+  height: 100%;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
