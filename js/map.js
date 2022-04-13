@@ -18,5 +18,19 @@ function initMap() {
   google.maps.event.addListener(marker, 'mouseover', function() {
     infowindow.open(map, marker);
   });
+
+  var marker2 = new google.maps.Marker({
+		position: new google.maps.LatLng(41.83151872944568, -87.62720601087234),
+		map: map, 
+    icon: './assets/image/tower_icon.jpg'
+  });
+
+  var infowindow2 = new google.maps.InfoWindow({
+    content: "<h1>IIT Tower</h1><p>IIT Tower is located at the southern end of campus and is home many aspects.<p>"
+  });
+
+  google.maps.event.addListener(marker2, 'mouseover', function() {
+    infowindow2.open(map, marker2);
+  });
 }
 google.maps.event.addDomListener(window, 'load', initMap);
